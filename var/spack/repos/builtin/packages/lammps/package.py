@@ -113,7 +113,7 @@ class Lammps(CMakePackage):
                 mpi_prefix,
                 'ON' if '+mpi' in spec else 'OFF')
         ]
-        
+
         if spec.satisfies('@20180629:+lib'):
             args.append('-DBUILD_LIB=ON')
 
